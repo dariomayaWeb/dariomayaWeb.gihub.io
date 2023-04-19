@@ -1,27 +1,37 @@
 body {
     background-color: linen;
 }
-.centrado{
-    flex-direction: column;
-}
 .titulo{
-padding-left: 400px;
 background-color:brown;
 }
 .abstracta{
 background-color:white;
-padding-left: 100px;
+padding-left: 175px;
+}
+.guitarras{
+    background-color:yellow;   
+}
+.origen{
+    scroll-padding-left: 500 px;
+}
+.hist{
+    line-height: 150%;
+    background-color:coral;
+    font-style: italic;
+    font-weight:2px;
+    color:beige;
 }
 
 h1 {
-    font-family: 'Times New Roman', Times, serif;
+    line-height: 130%;
+    font-family: 'Times New Roman';
     color: linen;
 }
 
 h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     color: brown;
-    margin-left: 10px;
+    margin-left: 100px;
 }
 
 h3 {
@@ -59,14 +69,14 @@ h5 {
 }
 
 #tercera{
-    margin-left: 200px;
+    
     border-width: 10px;
     border-style:dashed;
     border-color:brown;
 }
 
 #cuarta{
-    margin-left: 50px;
+   
     border-width: 10px;
     border-style:dashed;
     border-color:brown;
