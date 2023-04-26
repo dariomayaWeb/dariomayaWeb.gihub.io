@@ -11,9 +11,26 @@ padding-left: 175px;
 .guitarras{
     background-color:yellow;   
 }
-.origen{
-    scroll-padding-left: 500 px;
+.ques{
+    margin: 50px;
 }
+.origen{
+    position:relative;   
+    border-color: chocolate;
+    border-style:dashed;
+    border-width: 10px;
+    margin-top: 500px;
+    
+    
+}
+.evolucion{
+    position:absolute;
+    left: 50px;
+    bottom: 50px;
+
+}
+
+
 .hist{
     line-height: 150%;
     background-color:coral;
@@ -21,32 +38,40 @@ padding-left: 175px;
     font-weight:2px;
     color:beige;
 }
+.guitarra5{
+    margin-left: 300px;
+}
 
 h1 {
-    line-height: 130%;
-    font-family: 'Times New Roman';
-    color: linen;
+    text-align: center;
+    font-size: 50px;
+    font-family:Cursiva'Times New Roman', Times, serif;
+    color:gold;
 }
 
 h2 {
+    text-align: center;
     font-family:'Courier New', Courier, monospace;
     color: brown;
     margin-left: 100px;
 }
 
 h3 {
-    font-family: sans-serif;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     color: brown;
     margin-left: 100px;
 }
 
 h4 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-family: Georgia,Times, serif;
     color: green;
     margin: 30px;
 }
 
 h5 {
+    text-align: center;
     font-kerning: inherit;
     color: rgb(0, 255, 157);
     margin: 30px;
@@ -65,18 +90,30 @@ h5 {
     width: 300px;
     border: 5px solid green;
     padding: 20px;
-    margin: 20px;
+    margin-top: 150px;
+    float:left
+}
+#segunda1{
+    float:right;
+    padding: 25px;
+    margin-top: 100px;
+   
+    border-style: solid;
+    border-width: 10px;
+    border-color: blueviolet;
 }
 
+
 #tercera{
-    
+    float: right;
+   margin-top: 100px;
     border-width: 10px;
-    border-style:dashed;
-    border-color:brown;
+    border-style:solid;
+    border-color:red;
 }
 
 #cuarta{
-   
+   margin-left: 400px;
     border-width: 10px;
     border-style:dashed;
     border-color:brown;
