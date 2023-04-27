@@ -14,22 +14,40 @@ padding-left: 175px;
 .ques{
     margin: 50px;
 }
-.origen{
-    position:relative;   
+.pintura{
+    float: left;
+    border-color: blueviolet;
+    border-style: solid;
+}
+.esquema{
+    float:right;
+    border-color: blueviolet;
+    border-style: solid;
+}
+.container1{
+    display:flex;
+}
+.container2{ 
+    
     border-color: chocolate;
-    border-style:dashed;
+    border-style:solid;
     border-width: 10px;
-    margin-top: 500px;
+    margin: 100px;   
     
-    
+    display:flex;   
+    padding-left: 200px;
+    padding-right:5px ;
+   
+}
+.origen{
+margin-right: 100px;
+margin-left: 50px;
+
+
 }
 .evolucion{
-    position:absolute;
-    left: 50px;
-    bottom: 50px;
-
+    text-align: center;
 }
-
 
 .hist{
     line-height: 150%;
