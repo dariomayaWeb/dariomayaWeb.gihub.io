@@ -15,35 +15,33 @@ body {
     margin: 50px;
 }
 .pintura{
-    float: left;
-    border-color: blueviolet;
-    border-style: solid;
+    padding-right: 50px;
 }
 .esquema{
-    float:right;
-    border-color: blueviolet;
-    border-style: solid;
+   
 }
 .container1{
+    margin-left: 300px;
+    
     display:flex;
 }
 .container2{ 
-    border-radius: 40%;
-    border-color: chocolate;
+    border-radius: 50%;
+    border-color: red;
     border-style:solid;
-    border-width: 10px;
+    border-width: 5px;
     margin: 100px;   
-    
+    margin-top: 40px;
     display:flex;   
     padding-left: 200px;
-    padding-right:5px ;
-   
+    padding-right:5px ;   
 }
 .origen{
     margin-right: 100px;
-    margin-left: 200px;
-
-
+    margin-left: 70px;
+}
+.citara{
+    margin-left: 100px;
 }
 .evolucion{
     text-align: center;
@@ -69,8 +67,8 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
-    color: brown;
+    font-family:'Times New Roman', Times, serif;
+    color:darkred;
     margin-left: 100px;
 }
 
@@ -87,14 +85,12 @@ h4 {
     color: green;
     margin: 30px;
 }
-
 h5 {
     text-align: center;
     font-kerning: inherit;
     color: rgb(0, 255, 157);
     margin: 30px;
 }
-
 #primera{
     padding: 5px;
     border-radius: 50%;
@@ -102,26 +98,21 @@ h5 {
     border-style: solid;
     border-color:brown;
 }
-
-
 #segunda{    
     width: 300px;
     border: 5px solid green;
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 50px;
     float:left
 }
 #segunda1{
     float:right;
     padding: 25px;
-    margin-top: 100px;
-   
+    margin-top: 50px; 
     border-style: solid;
     border-width: 10px;
-    border-color: blueviolet;
+    border-color: rgb(226, 80, 43);
 }
-
-
 #tercera{
     float: right;
     margin-top: 100px;
@@ -129,7 +120,6 @@ h5 {
     border-style:solid;
     border-color:red;
 }
-
 #cuarta{
     margin-left: 400px;
     border-width: 10px;
@@ -143,9 +133,14 @@ h5 {
     margin-left: 400px;
 }
 .presencia{
+    /*border-style: solid;
+    border-color: blueviolet;*/
+    margin-right: 400px;
+}
+.historia{
+    border-color: red;
     border-style: solid;
-    border-color: blueviolet;
-    margin-right: 100px;
+    margin-top: 50px;
 }
 
 
