@@ -2,11 +2,11 @@ body {
     background-color: linen;
 }
 .titulo{
-background-color:brown;
+    background-color:brown;
 }
 .abstracta{
-background-color:white;
-padding-left: 175px;
+    background-color:white;
+    padding-left: 175px;
 }
 .guitarras{
     background-color:yellow;   
@@ -28,7 +28,7 @@ padding-left: 175px;
     display:flex;
 }
 .container2{ 
-    
+    border-radius: 40%;
     border-color: chocolate;
     border-style:solid;
     border-width: 10px;
@@ -40,8 +40,8 @@ padding-left: 175px;
    
 }
 .origen{
-margin-right: 100px;
-margin-left: 50px;
+    margin-right: 100px;
+    margin-left: 200px;
 
 
 }
@@ -124,17 +124,28 @@ h5 {
 
 #tercera{
     float: right;
-   margin-top: 100px;
+    margin-top: 100px;
     border-width: 10px;
     border-style:solid;
     border-color:red;
 }
 
 #cuarta{
-   margin-left: 400px;
+    margin-left: 400px;
     border-width: 10px;
     border-style:dashed;
     border-color:brown;
+}
+.latina2{ 
+    margin-left:600px;
+}
+.evo{
+    margin-left: 400px;
+}
+.presencia{
+    border-style: solid;
+    border-color: blueviolet;
+    margin-right: 100px;
 }
 
 
