@@ -21,8 +21,7 @@ body {
    
 }
 .container1{
-    margin-left: 300px;
-    
+    margin-left: 300px;    
     display:flex;
 }
 .container2{ 
@@ -149,6 +148,9 @@ h5 {
 }
 .luthier{
     margin-left: 400px;
+}
+.elija{
+    display:flex;
 }
 
 
