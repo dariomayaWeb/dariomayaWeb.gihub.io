@@ -57,10 +57,10 @@ body {
     margin-left: 300px;
 }*/
 .presencia{
-    margin-left: 300px;
+    margin-left: 200px;
     border-style: solid;
     border-color:limegreen;
-    margin-right: 400px;
+    margin-right: 200px;
 }
 .mariachis{
     margin-left: 150px;
@@ -149,8 +149,57 @@ h5 {
 .luthier{
     margin-left: 400px;
 }
+.inter1{
+    margin-left: 150px;
+    display:flex;
+}
+.inter2{
+    margin-left: 150px;
+    display:flex;
+}
+.inter3{
+    margin-left: 150px;
+    display:flex;
+}
+.refe{
+    margin-left:150px ;
+}
 .elija{
     display:flex;
+    margin-left: 100px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:150%;
+    color:green
+}
+#clas{   
+    border-color: brown;
+    border-style: solid;
+}
+#elec{
+    border-color: black;
+    border-style: solid;
+}
+#acus{
+    border-style: solid;
+    border-color: blue  
+}
+.espacio{
+    padding: 2%;
+}
+.form{
+    display:flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:darkmagenta;
+    margin-left: 100px;
+}
+.mail{
+    margin-left: 100px;
+    font-family:'Times New Roman', Times, serif;
+    color:darkgreen;
+}
+.envio{
+    margin-left: 30%;
 }
 
 

@@ -11,18 +11,70 @@
 <body>
     <h1><em>Galería de guitarras</em></h1>
     <h2>¿Que guitarra le gustaría tener?</h2>
-    <div class="elija">
-        <ul >       
-        <img src="guitarraClasica.jpeg" width="180px" heigth="80px"> 
-        <li>Clásica</li>       
-        <img src="guitar2.jpeg" width="80px" heigth="80px"> 
-        <li>Eléctrica</li>       
+    <div  class="elija">
+        <div>      
+        <img id="clas" src="guitarraClasica.jpeg" width="250px" heigth="100px"> 
+        <p>Clásica</p>  
+        </div>
+             <div class="espacio">
+            </div>
+        <div>    
+        <img id="elec"src="guitar2.jpeg" width="80px" heigth="150px"> 
+        <p>Eléctrica</p> 
+        </div>
+            <div class="espacio">
+            </div>
+        <div>     
         <img src="guitCriolla.jpeg" width="140px" heigth="80px"> 
-        <li>Criolla</li>      
-        <img src="guitElectroacus.jpeg" width="150px" heigth="80px"> 
-        <li>Electroacústica</li>      
-        <img src="guitar.jpg" width="180px" heigth="80px"> 
-        <li>Personalizadas</li>     
-        </ul> 
+        <p>Criolla</p> 
+        </div>
+            <div class="espacio">
+            </div>
+        <div>     
+        <img id="acus" src="guitElectroacus.jpeg" width="200px" heigth="100px"> 
+        <p>Electroacústica</p> 
+        </div>
+            <div class="espacio">
+            </div>
+        <div>     
+        <img src="guitar.jpg" width="250px" heigth="80px"> 
+        <p>Personalizadas</p> 
+        </div>    
     </div>
+<div class="form">
+    <div>
+    <p>Si desea adquirir una envíenos sus datos y dirección de mail, nos contactaremos con Ud. </p>
+    </div>
+    <div class="espacio">
+    </div>
+    <div>
+    <form action="/action_page.php">
+        <label for="guitarras">Elija una guitarra:</label>
+        <select id="guitarras" name="guitarras" >
+            <option selected value="clasica">Clásica</option>
+            <option value="electrica">Eléctrica</option>
+            <option value="criolla">Criolla</option>
+            <option value="electroacustica">Electroacústica</option>
+            <option value="personalizada">Personalizada</option>
+        </select>
+    </div>
+ </div>  
+    <div class="mail"> 
+        <div>
+    <label for="Nombre">Nombre</label>
+    <input type="text" id="Nombre" name="Nombre">
+    <label for="Apellido">Apellido</label>
+    <input type="text" id="Apellido"name="Apellido">
+    <label for="Mail" id="Mail">Mail</label>
+    <input type="text" id="Mail"name="Mail">
+         </div>
+    <div class="espacio">
+    </div>
+        <div class="envio">
+    <input type="submit"value="Enviar">
+        </div>
+    </div>
+    </form>
+
+
 </body>
