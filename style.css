@@ -150,14 +150,17 @@ h5 {
     margin-left: 400px;
 }
 .inter1{
+    text-align: center;
     margin-left: 150px;
     display:flex;
 }
 .inter2{
+    text-align: center;
     margin-left: 150px;
     display:flex;
 }
 .inter3{
+    text-align: center;
     margin-left: 150px;
     display:flex;
 }
@@ -191,15 +194,20 @@ h5 {
     display:flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:darkmagenta;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 .mail{
-    margin-left: 100px;
+    margin-left: 150px;
+    margin-right: 100px;
     font-family:'Times New Roman', Times, serif;
-    color:darkgreen;
+    color:darkmagenta;
+    display:flex
+}
+.marca{
+    margin-left: 3%;
 }
 .envio{
-    margin-left: 30%;
+    margin-left: 10%;
 }
 
 
