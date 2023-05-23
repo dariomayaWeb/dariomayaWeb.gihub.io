@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario.html</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <scrip> src="java.js"</scrip>
 </head>
 <body>
     <h1><em>Galería de guitarras</em></h1>
@@ -84,8 +85,30 @@
         <div class="envio">
     <input type="submit"value="Enviar">
         </div>
-    </div>   
+        </div>   
     </form>
+
+    <h2>Crea tu enlace</h2>
+<div class="crear">
+<form>
+  <label for="f_destino">Destino:</label>
+  <input type="text" id="f_destino" name="f_destino" placeholder="Ingrese URL">
+  <label for="f_texto">Texto que aparece:</label>
+  <input type="text" id="f_texto" name="f_texto" placeholder="Texto a mostrar">
+  <button type="button" onclick="crear()">Crear</button>
+  <button type="button" onclick="limpiar_errores()">Limpiar Errores</button>
+</form>
+</div>
+<ul id="lta_errores">
+</ul>
+
+<h2>Enlaces creados:</h2>
+<div>
+    <input id="enlace" type="text" id="Enlaces creados"name="Enlaces creados">
+</div>
+<div id="caja_enlaces">
+</div>
 
 
 </body>
+</html>

@@ -152,7 +152,9 @@ h5 {
 .inter1{
     text-align: center;
     margin-left: 150px;
-    display:flex;
+    vertical-align: top
+    /*display: inline-block */
+    
 }
 .inter2{
     text-align: center;
@@ -209,8 +211,18 @@ h5 {
 .envio{
     margin-left: 10%;
 }
+.crear{
+    margin-left: 10%;
+    font-family:'Times New Roman', Times, serif;
+    color:darkmagenta;
+}
+#enlace{
+    margin-left: 47%;
+}
 
-
+/*label, input {
+    display: block;
+}*/
 
 
 
