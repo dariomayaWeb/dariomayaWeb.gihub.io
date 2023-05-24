@@ -1,19 +1,24 @@
 
 
-        let fotos = ["Jimy Hendrix.jpeg", "ChukBerry.jpeg", "PacodeLucia.jpeg", "Lebon.jpeg","CachoTirao.jpeg"];
+        let fotos = ["Jimy Hendrix.jpeg", "ChukBerry.jpeg", "PacodeLucia.jpeg", "Lebon.jpeg","CachoTirao.jpeg","BrianMay.jpeg","Clapton.jpeg","ElNegroFerreira.jpeg","Ceratti.jpeg","Falu.jpeg"];
+        let nombres=["Jimy Hendrix", "Chuk Berry", "Paco de Lucia", "David Lebon","Cacho Tirao","Brian May","Erik Clapton","El Negro Ferreira","Gustavo Ceratti","Eduardo Falú"]
         let i = 0;
         function adelante() {
             if (i < fotos.length-1 ) {
                 i++;
                 let elemento = document.querySelector("#carrusel");
+                let nom = document.querySelector("#nombres");
                 elemento.src = fotos[i];
+                nom.innerHTML = nombres[i];
             }
         }
         function atras() {
             if (i > 0 && i < fotos.length) {
                 i--;
                 let elemento = document.querySelector("#carrusel");
+                let nom = document.querySelector("#nombres");
                 elemento.src = fotos[i];
+                nom.innerHTML = nombres[i];
             }
         }
  function limpiar_errores(){
