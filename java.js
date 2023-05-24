@@ -1,5 +1,21 @@
-java.js
 
+
+        let fotos = ["Jimy Hendrix.jpeg", "ChukBerry.jpeg", "PacodeLucia.jpeg", "Lebon.jpeg","CachoTirao.jpeg"];
+        let i = 0;
+        function adelante() {
+            if (i < fotos.length-1 ) {
+                i++;
+                let elemento = document.querySelector("#carrusel");
+                elemento.src = fotos[i];
+            }
+        }
+        function atras() {
+            if (i > 0 && i < fotos.length) {
+                i--;
+                let elemento = document.querySelector("#carrusel");
+                elemento.src = fotos[i];
+            }
+        }
  function limpiar_errores(){
     let lta_errores = document.getElementById("lta_errores");
     lta_errores.innerHTML = "";
@@ -34,13 +50,7 @@ function crear() {
     enlace.innerHTML = f_texto.value;
     caja_enlaces.appendChild(enlace);
 }
-  let fotos = ["Jimy Hendrix.jpeg", "ChukBerry.jpeg", "Paco de Lucia.jpeg", "Lebon.jpeg"] ;  
+  
  
-function carru() {
-let elemento = document.querySelector("#carrusel");
-/*if(i==0){
-    i++;*/
-elemento.innerHTML = fotos[3];
- 
-}
+
 

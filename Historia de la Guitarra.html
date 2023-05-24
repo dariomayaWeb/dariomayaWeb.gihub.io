@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia de la Guitarra.html</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script> src="java.js"</script>
 
 </head>
 
@@ -92,34 +93,14 @@
             investigadores es que se utilizaban maderas de los árboles autóctonos de cada lugar.(4)</p>
         <img class="luthier" src="Luthier.jpeg"> <img src="Luthier2.jpeg">
     </div>
-    <h2>Interpretes destacados a traves de su historia</h2>
+    <h2>Interpretes destacados a través de su historia</h2>
 
     <div class="inter1">
         <img id="carrusel" src="Jimy Hendrix.jpeg" width="200px" height="200px">
     </div>
     <button onclick="adelante()">adelante</button>
     <button onclick="atras()">atras</button>
-    <script>
-        let fotos = ["Jimy Hendrix.jpeg", "ChukBerry.jpeg", "PacodeLucia.jpeg", "Lebon.jpeg","CachoTirao.jpeg"];
-        let i = 0;
-        function adelante() {
-            if (i < fotos.length-1 ) {
-                i++;
-                let elemento = document.querySelector("#carrusel");
-                elemento.src = fotos[i];
-            }
-        }
-        function atras() {
-            if (i > 0 && i < fotos.length) {
-                i--;
-                let elemento = document.querySelector("#carrusel");
-                elemento.src = fotos[i];
-            }
-        }
-                
-            
-
-    </script>
+    
     <!--   <div> 
     <img src="PacodeLucia.jpeg">
     <P>Paco de Lucia</P>
