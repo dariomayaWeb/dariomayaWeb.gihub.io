@@ -34,10 +34,13 @@ function crear() {
     enlace.innerHTML = f_texto.value;
     caja_enlaces.appendChild(enlace);
 }
-  let fotos = ["ChukBerry.jpeg","Paco de Lucia.jpeg"] ;  
-  let i=0;
+  let fotos = ["Jimy Hendrix.jpeg", "ChukBerry.jpeg", "Paco de Lucia.jpeg", "Lebon.jpeg"] ;  
+ 
 function carru() {
 let elemento = document.querySelector("#carrusel");
-elemento.innerHTML = fotos[i];
- i++;
+/*if(i==0){
+    i++;*/
+elemento.innerHTML = fotos[3];
+ 
 }
+
