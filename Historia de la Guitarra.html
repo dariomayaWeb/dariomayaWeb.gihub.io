@@ -95,25 +95,25 @@
     <h2>Interpretes destacados a traves de su historia</h2>
 
     <div class="inter1">
-        <img src="Jimy Hendrix.jpeg" width="200px" height="200px">
+        <img id="carrusel" src="Jimy Hendrix.jpeg" width="200px" height="200px">
     </div>
     <button onclick="adelante()">adelante</button>
     <button onclick="atras()">atras</button>
     <script>
-        let fotos = ["Jimy Hendrix.jpeg", "ChukBerry.jpeg", "Paco de Lucia.jpeg", "Lebon.jpeg","Cacho Tirao.jpeg"];
+        let fotos = ["Jimy Hendrix.jpeg", "ChukBerry.jpeg", "PacodeLucia.jpeg", "Lebon.jpeg","CachoTirao.jpeg"];
         let i = 0;
         function adelante() {
             if (i < fotos.length-1 ) {
                 i++;
-                let elemento = document.querySelector(".inter1");
-                elemento.innerHTML = fotos[i];
+                let elemento = document.querySelector("#carrusel");
+                elemento.src = fotos[i];
             }
         }
         function atras() {
             if (i > 0 && i < fotos.length) {
                 i--;
-                let elemento = document.querySelector(".inter1");
-                elemento.innerHTML = fotos[i];
+                let elemento = document.querySelector("#carrusel");
+                elemento.src = fotos[i];
             }
         }
                 
