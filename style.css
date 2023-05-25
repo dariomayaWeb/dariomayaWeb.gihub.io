@@ -1,28 +1,38 @@
 body {
     background-color: linen;
 }
-.titulo{
-    background-color:brown;
-}
+
 .abstracta{
-    background-color:white;
-    padding-left: 175px;
+  /*  background-color:white;*/
+    padding-left: 350px;
 }
 .guitarras{
     background-color:yellow;   
 }
 .ques{
     margin: 50px;
+    color:darkmagenta ;
+}
+#que{
+    
 }
 .pintura{
+    margin-left:100px ;
     padding-right: 50px;
+    position: relative;
+}
+#verso{
+position: absolute;
+color:cyan ;
+font-size: 30px;
 }
 .esquema{
    
 }
 .container1{
-    margin-left: 300px;    
+    margin-left: 200px;    
     display:flex;
+    position: relative;
 }
 .container2{ 
     border-radius: 50%;
@@ -47,11 +57,12 @@ body {
 }
 
 .hist{
-    line-height: 150%;
+    height: 100%;
     background-color:coral;
     font-style: italic;
-    font-weight:2px;
+    font-weight:100px;
     color:beige;
+
 }
 /*.guitarra5{
     margin-left: 300px;
@@ -69,7 +80,7 @@ h1 {
     text-align: center;
     font-size: 50px;
     font-family:Cursiva'Times New Roman', Times, serif;
-    color:gold;
+    color:;
 }
 
 h2 {
@@ -99,11 +110,11 @@ h5 {
     margin: 30px;
 }
 #primera{
-    padding: 5px;
+   /* padding: 5px;*/
     border-radius: 50%;
     border-width: 10px;
     border-style: solid;
-    border-color:brown;
+    border-color:coral;
 }
 #segunda{ 
     width: 300px;  
@@ -111,10 +122,9 @@ h5 {
     border: 5px solid green;
     padding: 20px;
     margin-top: 50px;
-    float:left
+    
 }
 #segunda1{
-    float:right;
     padding: 25px;
     margin-top: 50px; 
     border-style: solid;
@@ -161,15 +171,14 @@ h5 {
     
 }
 .inter2{
+    background-color: coral;
+    color: coral;
+}
+/*.inter3{
     text-align: center;
     margin-left: 150px;
     display:flex;
-}
-.inter3{
-    text-align: center;
-    margin-left: 150px;
-    display:flex;
-}
+}*/
 .refe{
     margin-left:150px ;
 }

@@ -9,106 +9,109 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="java.js"></script>
 </head>
+
 <body>
     <h1><em>Galería de guitarras</em></h1>
     <h2>¿Que guitarra le gustaría tener?</h2>
-    <div  class="elija">
-        <div>      
-        <img id="clas" src="guitarraClasica.jpeg" width="250px" heigth="100px"> 
-        <p>Clásica</p>  
-        </div>
-             <div class="espacio">
-            </div>
-        <div>    
-        <img id="elec"src="guitar2.jpeg" width="80px" heigth="150px"> 
-        <p>Eléctrica</p> 
-        </div>
-            <div class="espacio">
-            </div>
-        <div>     
-        <img src="guitCriolla.jpeg" width="140px" heigth="80px"> 
-        <p>Criolla</p> 
-        </div>
-            <div class="espacio">
-            </div>
-        <div>     
-        <img id="acus" src="guitElectroacus.jpeg" width="200px" heigth="100px"> 
-        <p>Electroacústica</p> 
-        </div>
-            <div class="espacio">
-            </div>
-        <div>     
-        <img src="guitar.jpg" width="250px" heigth="80px"> 
-        <p>Personalizadas</p> 
-        </div>    
-    </div>
-<div class="form">
-    <div>
-    <p>Si desea adquirir un instrumento envíenos sus datos y dirección de mail, nos contactaremos con Ud. </p>
-    </div>
-    <div class="espacio">
-    </div>
-    <div>
-    <form action="/action_page.php">
-        <label for="guitarras">Elija una guitarra:</label>
-        <select id="guitarras" name="guitarras" >
-            <option selected value="clasica">Clásica</option>
-            <option value="electrica">Eléctrica</option>
-            <option value="criolla">Criolla</option>
-            <option value="electroacustica">Electroacústica</option>
-            <option value="personalizada">Personalizada</option>
-        </select>
-    </div>
- </div>  
-    <div class="mail"> 
+    <div class="elija">
         <div>
-    <label for="Nombre">Nombre</label>
-    <input type="text" id="Nombre" name="Nombre">
-    <label for="Apellido">Apellido</label>
-    <input type="text" id="Apellido"name="Apellido">
-    <label for="Mail" id="Mail">Mail</label>
-    <input type="text" id="Mail"name="Mail">
-         </div>
-         <div class="espacio">
+            <img id="clas" src="guitarraClasica.jpeg" width="250px" heigth="100px">
+            <p>Clásica</p>
         </div>
-         <div class="marca">
+        <div class="espacio">
+        </div>
+        <div>
+            <img id="elec" src="guitar2.jpeg" width="80px" heigth="150px">
+            <p>Eléctrica</p>
+        </div>
+        <div class="espacio">
+        </div>
+        <div>
+            <img src="guitCriolla.jpeg" width="140px" heigth="80px">
+            <p>Criolla</p>
+        </div>
+        <div class="espacio">
+        </div>
+        <div>
+            <img id="acus" src="guitElectroacus.jpeg" width="200px" heigth="100px">
+            <p>Electroacústica</p>
+        </div>
+        <div class="espacio">
+        </div>
+        <div>
+            <img src="guitar.jpg" width="250px" heigth="80px">
+            <p>Personalizadas</p>
+        </div>
+    </div>
+    <div class="form">
+        <div>
+            <p>Si desea adquirir un instrumento envíenos sus datos y dirección de mail, nos contactaremos con Ud. </p>
+        </div>
+        <div class="espacio">
+        </div>
+        <div>
+            <form action="/action_page.php">
+                <label for="guitarras">Elija una guitarra:</label>
+                <select id="guitarras" name="guitarras">
+                    <option selected value="clasica">Clásica</option>
+                    <option value="electrica">Eléctrica</option>
+                    <option value="criolla">Criolla</option>
+                    <option value="electroacustica">Electroacústica</option>
+                    <option value="personalizada">Personalizada</option>
+                </select>
+        </div>
+    </div>
+    <div class="mail">
+        <div>
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" name="Nombre">
+            <label for="Apellido">Apellido</label>
+            <input type="text" id="Apellido" name="Apellido">
+            <label for="Mail" id="Mail">Mail</label>
+            <input type="text" id="Mail" name="Mail">
+        </div>
+        <div class="espacio">
+        </div>
+        <div class="marca">
             <form action="/action_page.php">
                 <label for="marcas">Elija una marca:</label>
-                <select id="marca" name="marca" >
+                <select id="marca" name="marca">
                     <option selected value="Fendel">Fendel</option>
                     <option value="Gloria">Gloria</option>
                     <option value="Antigua Casa Nuñez">Antigua Casa Nuñez</option>
                     <option value="Patria">Patria</option>
                     <option value="Sevilla">Sevilla</option>
                 </select>
-            </div>   
-        <div class="envio">
-    <input type="submit"value="Enviar">
+            </form>
         </div>
-        </div>   
+        <div class="envio">
+            <input type="submit" value="Enviar">
+        </div>
+    </div>
     </form>
 
     <h2>Crea tu enlace</h2>
-<div class="crear">
-<form>
-  <label for="f_destino">Destino:</label>
-  <input type="text" id="f_destino" name="f_destino" placeholder="Ingrese URL">
-  <label for="f_texto">Texto que aparece:</label>
-  <input type="text" id="f_texto" name="f_texto" placeholder="Texto a mostrar">
-  <button type="button" onclick="crear()">Crear</button>
-  <button type="button" onclick="limpiar_errores()">Limpiar Errores</button>
-</form>
-</div>
-<ul id="lta_errores">
-</ul>
+    <div class="crear">
+        <form>
+            <label for="f_destino">Destino:</label>
+            <input type="text" id="f_destino" name="f_destino" placeholder="Ingrese URL">
+            <label for="f_texto">Texto que aparece:</label>
+            <input type="text" id="f_texto" name="f_texto" placeholder="Texto a mostrar">
+            <button type="button" onclick="crear()">Crear</button>
+            <button type="button" onclick="limpiar_errores()">Limpiar Errores</button>
+        </form>
+    </div>
+    <ul id="lta_errores">
+    </ul>
 
-<h2>Enlaces creados:</h2>
-<div>
-    <input id="enlace" type="text" id="Enlaces creados"name="Enlaces creados">
-</div>
-<div id="caja_enlaces">
-</div>
+    <h2>Enlaces creados:</h2>
+    <div>
+        <input id="enlace" type="text" id="Enlaces creados" name="Enlaces creados">
+    </div>
+    <div id="caja_enlaces">
+    </div>
 
 
 </body>
+
 </html>
