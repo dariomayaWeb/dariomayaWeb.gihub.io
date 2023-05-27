@@ -11,20 +11,18 @@ body {
 }
 .ques{
     margin: 50px;
-    color:darkmagenta ;
+    color:blue ;
+    font-size: 20px;
 }
-#que{
-    
-}
+
 .pintura{
     margin-left:100px ;
     padding-right: 50px;
-    position: relative;
+    
 }
 #verso{
-position: absolute;
-color:cyan ;
-font-size: 30px;
+color:blue ;
+font-size: 20px;
 }
 .esquema{
    
@@ -174,13 +172,11 @@ h5 {
     background-color: coral;
     color: coral;
 }
-/*.inter3{
-    text-align: center;
-    margin-left: 150px;
-    display:flex;
-}*/
+.youtube{
+    margin-left: 250px;
+}
 .refe{
-    margin-left:150px ;
+    margin-left:300px ;
 }
 .elija{
     display:flex;
@@ -224,10 +220,10 @@ h5 {
 .envio{
     margin-left: 10%;
 }
-.crear{
+.comunica{
     margin-left: 10%;
     font-family:'Times New Roman', Times, serif;
-    color:darkmagenta;
+    color:forestgreen;
 }
 #enlace{
     margin-left: 47%;
