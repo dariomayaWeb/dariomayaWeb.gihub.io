@@ -2,89 +2,111 @@ body {
     background-color: linen;
 }
 
-.abstracta{
-  /*  background-color:white;*/
-    padding-left: 350px;
+.abstracta {
+    display:flex;
+    /*  background-color:white;*/
+     padding-left: 350px;
 }
-.guitarras{
-    background-color:yellow;   
+
+.guitarras {
+    background-color: yellow;
+    border: 3px solid brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.ques{
+
+#partes {
+    display: block
+}
+
+#primera {
+    display: block
+}
+
+#pintura {
+    display: block
+}
+
+.ques {
     margin: 50px;
-    color:blue ;
+    color: blue;
     font-size: 20px;
 }
 
-.pintura{
-    margin-left:100px ;
-    padding-right: 50px;
-    
+.pintura {
+    margin-left: 100px;
 }
-#verso{
-color:blue ;
-font-size: 20px;
+
+#verso {
+    color: blue;
+    font-size: 20px;
 }
-.esquema{
-   
-}
-.container1{
-    margin-left: 200px;    
-    display:flex;
+
+.esquema {}
+
+.container1 {
+    margin-left: 100px;
+    margin-right: 80px;
+    display: flex;
     position: relative;
 }
-.container2{ 
+
+.container2 {
     border-radius: 50%;
     border-color: red;
-    border-style:solid;
+    border-style: solid;
     border-width: 5px;
-    margin: 100px;   
+    margin: 100px;
     margin-top: 40px;
-    display:flex;   
+    display: flex;
     padding-left: 200px;
-    padding-right:5px ;   
+    padding-right: 5px;
 }
-.origen{
+
+.origen {
     margin-right: 100px;
     margin-left: 70px;
 }
-.citara{
+
+.citara {
     margin-left: 100px;
 }
-.evolucion{
+
+.evolucion {
     text-align: center;
 }
 
-.hist{
+.hist {
     height: 100%;
-    background-color:coral;
+    background-color: coral;
     font-style: italic;
-    font-weight:100px;
-    color:beige;
-
+    font-weight: 100px;
+    color: beige;
 }
+
 /*.guitarra5{
     margin-left: 300px;
 }*/
-.presencia{
+.presencia {
     margin-left: 200px;
     border-style: solid;
-    border-color:limegreen;
+    border-color: limegreen;
     margin-right: 200px;
 }
-.mariachis{
+
+.mariachis {
     margin-left: 150px;
 }
+
 h1 {
     text-align: center;
     font-size: 50px;
-    font-family:Cursiva'Times New Roman', Times, serif;
-    color:;
+    font-family: Cursiva'Times New Roman', Times, serif;
 }
 
 h2 {
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    color:darkred;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkred;
     margin-left: 100px;
 }
 
@@ -97,42 +119,52 @@ h3 {
 
 h4 {
     text-align: center;
-    font-family: Georgia,Times, serif;
+    font-family: Georgia, Times, serif;
     color: green;
     margin: 30px;
 }
+
 h5 {
     text-align: center;
     font-kerning: inherit;
     color: rgb(0, 255, 157);
     margin: 30px;
 }
-#primera{
-   /* padding: 5px;*/
+
+#primera {
+    /* padding: 5px;*/
     border-radius: 50%;
     border-width: 10px;
     border-style: solid;
-    border-color:coral;
+    border-color: coral;
 }
-#segunda{ 
-    width: 300px;  
+
+#segunda {
+    width: 300px;
     height: 400px;
     border: 5px solid green;
     padding: 20px;
     margin-top: 50px;
-    
+
 }
-#segunda1{
+
+#segunda1 {
     padding: 25px;
-    margin-top: 50px; 
+    margin-top: 50px;
     border-style: solid;
     border-width: 10px;
     border-color: rgb(226, 80, 43);
 }
-#nombres{
+
+#nombres {
     color: blue;
     font-size: 20px;
 }
+
+#evolucion {
+    color: blue;
+}
+
 /*#tercera{
     float: right;
     margin-top: 100px;
@@ -146,93 +178,121 @@ h5 {
     border-style:dashed;
     border-color:brown;
 }*/
-.latina2{ 
-    margin-left:600px;
+.latina1 {
+    color: blue;
 }
-.evo{
+
+.latina2 {
+    margin-left: 600px;
+}
+
+.evo {
     margin-left: 400px;
 }
 
-.historia{
+.historia {
     border-color: red;
     border-style: solid;
     margin-top: 50px;
 }
-.luthier{
+
+.luthier {
     margin-left: 400px;
 }
-.inter1{
+
+.inter1 {
     text-align: center;
-    margin-left: 150px;
+    margin-left: 100px;
     vertical-align: top
-    /*display: inline-block */
-    
 }
-.inter2{
+
+.inter2 {
     background-color: coral;
     color: coral;
 }
-.youtube{
+
+.youtube {
     margin-left: 250px;
+    color: darkred
 }
-.refe{
-    margin-left:300px ;
+
+#video {
+    padding-left: 5px;
 }
-.elija{
-    display:flex;
-    margin-left: 100px;
+
+#refe {
+    margin-left: 5px;
+}
+
+.elija {
+    display: flex;
+    margin-left: 160px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size:150%;
-    color:green
+    font-size: 150%;
+    color: green
 }
-#clas{   
+
+#clas {
     border-color: brown;
     border-style: solid;
 }
-#elec{
+
+#elec {
     border-color: black;
     border-style: solid;
 }
-#acus{
+
+#acus {
     border-style: solid;
-    border-color: blue  
+    border-color: blue
 }
-.espacio{
+
+.espacio {
     padding: 2%;
 }
-.form{
-    display:flex;
+
+.for {
+    display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:darkmagenta;
+    font-size: 20px;
+    color: darkmagenta;
     margin-left: 150px;
 }
-.mail{
+
+#tipo{
+    margin-left: 200px;
+}
+
+.mail {
     margin-left: 150px;
     margin-right: 100px;
-    font-family:'Times New Roman', Times, serif;
-    color:darkmagenta;
-    display:flex
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: darkmagenta;
+    display: flex
 }
-.marca{
-    margin-left: 3%;
+
+.marca {
+    margin-left: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkmagenta;
 }
-.envio{
+
+.envio {
     margin-left: 10%;
 }
-.comunica{
+
+.comunica {
     margin-left: 10%;
-    font-family:'Times New Roman', Times, serif;
-    color:forestgreen;
+    font-family: 'Times New Roman', Times, serif;
+    color: forestgreen;
 }
-#enlace{
+
+#enlace {
     margin-left: 47%;
 }
 
 /*label, input {
     display: block;
 }*/
-
-
-
-

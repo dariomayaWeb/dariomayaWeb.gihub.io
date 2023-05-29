@@ -43,13 +43,16 @@
             <p>Personalizadas</p>
         </div>
     </div>
-    <div class="form">
+    <div class="for">
         <div>
-            <p>Si desea adquirir un instrumento envíenos sus datos y dirección de mail, nos contactaremos con Ud. </p>
+            <p>Comuniquese con nosotros si desea adquirir un instrumento,<br> envíenos sus datos y dirección de mail
+                para su<em>pedido,sugerencia o queja</em>,<br> nos contactaremos con Ud a la brevedad.Muchas gracias.
+            </p>
         </div>
         <div class="espacio">
         </div>
-        <div>
+        <div id="tipo">
+            <br><br>
             <label for="guitarras">Elija una guitarra:</label>
             <select id="guitarras" name="guitarras">
                 <option selected value="clasica">Clásica</option>
@@ -62,7 +65,7 @@
     </div>
     <div class="mail">
         <div>
-            <form name="formu" onsubmit="return validar()" method="post">
+            <form name="formu" onsubmit="return validar()">
                 <label for="Nombre">Nombre</label>
                 <input type="text" id="Nombre" name="Nombre">
                 <label for="Apellido">Apellido</label>
@@ -77,35 +80,36 @@
                     <option value="Sugerencia">Sugerencia</option>
                 </select>
                 <br><br>
-                <input type="submit" value="Enviar">
-                <br>
+                <input type="submit" value="Enviar1">
+             <!-- <button type="button" onclick="validar()">Enviar2</button>-->
+                <br><br>
                 <button type="button" onclick="limpiar_errores()">Limpiar Errores</button>
-                <br>
+            </form>
+           
+        </div>
+        <br>
+        <!-- <div class="espacio">
+        </div>-->
+        <div class="marca">
+                <label for="marcas">Elija una marca:</label>
+                <select id="marca" name="marca">
+                    <option selected value="Fendel">Fendel</option>
+                    <option value="Gloria">Gloria</option>
+                    <option value="Antigua Casa Nuñez">Antigua Casa Nuñez</option>
+                    <option value="Patria">Patria</option>
+                    <option value="Sevilla">Sevilla</option>
+                </select>
                 <div class="comunica">
                     <p>Últimas comunicaciones:</p>
                     <ul id="lta_comunicaciones">
-                    </ul>
-                    <ul id="lta_errores">
-                    </ul>
-            </form>
-        </div>
+                </ul>
+                <ul id="lta_errores">
+                </ul>
+                </div>      
     </div>
-    <div class="espacio">
-    </div>
-    <div class="marca">
-        <form name="gloria">
-            <label for="marcas">Elija una marca:</label>
-            <select id="marca" name="marca">
-                <option selected value="Fendel">Fendel</option>
-                <option value="Gloria">Gloria</option>
-                <option value="Antigua Casa Nuñez">Antigua Casa Nuñez</option>
-                <option value="Patria">Patria</option>
-                <option value="Sevilla">Sevilla</option>
-            </select>
-    </div>
-    </div>
-    </form>
-    <div class="inter2"><p>guitar,citara,laud,guitarra</p></div>
+    <!--<div class="inter2">
+        <p>///////////</p>
+    </div>-->
 </body>
 
 </html>

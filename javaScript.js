@@ -21,8 +21,8 @@ function atras() {
         nom.innerHTML = nombres[i];
     }
 }
-
-
+/*let nomb = document.forms["formu"]["Nombre"];
+nomb.requestFocus();*/
 function validar() {
     let nomb = document.forms["formu"]["Nombre"];
     let apell = document.forms["formu"]["Apellido"];
@@ -35,8 +35,7 @@ function validar() {
     apell.style.border = "3px solid blue";
    
     if (nomb.value == "") {
-        nomb.style.border = "3px solid red";
-      
+        nomb.style.border = "3px solid red";   
         let aviso = document.createElement("li");
         lista_errores.appendChild(aviso);
         aviso.innerHTML = "Debe colocar un nombre";       
@@ -45,21 +44,18 @@ function validar() {
     }
     if (apell.value == "") {
         apell.style.border = "3px solid red";
-      /*  let aviso2 = document.querySelector("#aviso2");
-        aviso2.style.display = "block";*/
         let aviso2 = document.createElement("li");
         lista_errores.appendChild(aviso2);
         aviso2.innerHTML = "Debe colocar un apellido"; 
         apell.focus();
         return false;
     }
-    if (!valid.test(mail) ){
+    /*if (!valid.test(mail) ){*/
+        if(mail.value == ""){
         mail.style.border = "3px solid red";
-        /*let aviso3 = document.querySelector("#aviso3");
-        aviso3.style.display = "block";*/
-        let aviso = document.createElement("li");
-        lista_errores.appendChild(aviso);
-        aviso.innerHTML = "Debe colocar el mail correctamente"; 
+        let aviso3 = document.createElement("li");
+        lista_errores.appendChild(aviso3);
+        aviso3.innerHTML = "Debe colocar el mail correctamente"; 
         mail.focus();  
         return false;   
     }
@@ -68,6 +64,7 @@ function validar() {
     item.innerHTML = nomb.value + " " + apell.value + " hizo una comunicación tipo " + f_tipo.value;
     let lta = document.querySelector("#lta_comunicaciones");
     lta.appendChild(item);
+    
 }
 function limpiar_errores() {
     let lta_errores = document.getElementById("lta_errores");
