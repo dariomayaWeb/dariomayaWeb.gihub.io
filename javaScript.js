@@ -26,8 +26,8 @@ nomb.requestFocus();*/
 function validar() {
     let nomb = document.forms["formu"]["Nombre"];
     let apell = document.forms["formu"]["Apellido"];
-    let mail = document.forms["formu"]["Mail"];
-    let valid = /^\w+@\w+(\.\{2,5})+$/;
+    let mail = document.forms["formu"]["mail"];
+    let valid = /^\w+@\w+(\.\w{2,5})+$/;
     let f_tipo = document.querySelector("#f_tipo");
     let lista_errores = document.getElementById("lta_errores");
 
@@ -50,8 +50,8 @@ function validar() {
         apell.focus();
         return false;
     }
-    /*if (!valid.test(mail) ){*/
-        if(mail.value == ""){
+    if (!valid.test(mail.value) ){
+      /*  if(mail.value == ""){*/
         mail.style.border = "3px solid red";
         let aviso3 = document.createElement("li");
         lista_errores.appendChild(aviso3);
@@ -64,7 +64,7 @@ function validar() {
     item.innerHTML = nomb.value + " " + apell.value + " hizo una comunicación tipo " + f_tipo.value;
     let lta = document.querySelector("#lta_comunicaciones");
     lta.appendChild(item);
-    
+    return false;
 }
 function limpiar_errores() {
     let lta_errores = document.getElementById("lta_errores");

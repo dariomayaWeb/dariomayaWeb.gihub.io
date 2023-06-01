@@ -3,9 +3,9 @@ body {
 }
 
 .abstracta {
-    display:flex;
+    display: flex;
     /*  background-color:white;*/
-     padding-left: 350px;
+    padding-left: 350px;
 }
 
 .guitarras {
@@ -253,24 +253,28 @@ h5 {
 }
 
 .for {
-    display: flex;
+    
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     color: darkmagenta;
     margin-left: 150px;
 }
 
-#tipo{
-    margin-left: 200px;
+#tipo {
+    margin-left: 150px;
+    color: darkmagenta;
+    margin-bottom: 10px;
 }
 
 .mail {
+    display:flex;
+    flex-direction:column;
+    border:3px solid darkred;
     margin-left: 150px;
     margin-right: 100px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: darkmagenta;
-    display: flex
 }
 
 .marca {

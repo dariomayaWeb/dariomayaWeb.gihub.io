@@ -43,14 +43,7 @@
             <p>Personalizadas</p>
         </div>
     </div>
-    <div class="for">
-        <div>
-            <p>Comuniquese con nosotros si desea adquirir un instrumento,<br> envíenos sus datos y dirección de mail
-                para su<em>pedido,sugerencia o queja</em>,<br> nos contactaremos con Ud a la brevedad.Muchas gracias.
-            </p>
-        </div>
-        <div class="espacio">
-        </div>
+    <div>
         <div id="tipo">
             <br><br>
             <label for="guitarras">Elija una guitarra:</label>
@@ -62,16 +55,32 @@
                 <option value="personalizada">Personalizada</option>
             </select>
         </div>
+        <div class="marca">
+            <label for="marcas">Elija una marca:</label>
+            <select id="marca" name="marca">
+                <option selected value="Fendel">Fendel</option>
+                <option value="Gloria">Gloria</option>
+                <option value="Antigua Casa Nuñez">Antigua Casa Nuñez</option>
+                <option value="Patria">Patria</option>
+                <option value="Sevilla">Sevilla</option>
+            </select>
+        </div>
     </div>
     <div class="mail">
-        <div>
-            <form name="formu" onsubmit="return validar()">
+        <div class="for">
+            <p>Comuniquese con nosotros si desea adquirir un instrumento,<br> envíenos sus datos y dirección de mail
+                para su<em>pedido,sugerencia o queja</em>,<br> nos contactaremos con Ud a la brevedad.Muchas
+                gracias.
+            </p>
+        </div>
+    
+            <form class="mail"name="formu" onsubmit="return validar()">
                 <label for="Nombre">Nombre</label>
                 <input type="text" id="Nombre" name="Nombre">
                 <label for="Apellido">Apellido</label>
                 <input type="text" id="Apellido" name="Apellido">
-                <label for="Mail" id="Mail">Mail</label>
-                <input type="text" id="Mail" name="Mail">
+                <label for="Mail">Mail</label>
+                <input type="text" id="Mail" name="mail">
                 <br><br>
                 <label for="f_tipo">Comunicación Tipo:</label><br>
                 <select id="f_tipo" name="f_tipo">
@@ -81,35 +90,23 @@
                 </select>
                 <br><br>
                 <input type="submit" value="Enviar1">
-             <!-- <button type="button" onclick="validar()">Enviar2</button>-->
+                <!-- <button type="button" onclick="validar()">Enviar2</button>-->
                 <br><br>
                 <button type="button" onclick="limpiar_errores()">Limpiar Errores</button>
             </form>
-           
-        </div>
+
         <br>
-        <!-- <div class="espacio">
-        </div>-->
-        <div class="marca">
-                <label for="marcas">Elija una marca:</label>
-                <select id="marca" name="marca">
-                    <option selected value="Fendel">Fendel</option>
-                    <option value="Gloria">Gloria</option>
-                    <option value="Antigua Casa Nuñez">Antigua Casa Nuñez</option>
-                    <option value="Patria">Patria</option>
-                    <option value="Sevilla">Sevilla</option>
-                </select>
-                <div class="comunica">
-                    <p>Últimas comunicaciones:</p>
-                    <ul id="lta_comunicaciones">
-                </ul>
-                <ul id="lta_errores">
-                </ul>
-                </div>      
     </div>
-    <!--<div class="inter2">
+    <div class="comunica">
+        <p>Últimas comunicaciones:</p>
+        <ul id="lta_comunicaciones">
+        </ul>
+        <ul id="lta_errores">
+        </ul>
+    </div>
+    <div class="inter2">
         <p>///////////</p>
-    </div>-->
+    </div>
 </body>
 
 </html>

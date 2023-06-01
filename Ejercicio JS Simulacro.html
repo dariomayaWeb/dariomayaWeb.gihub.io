@@ -1,0 +1,47 @@
+Ejercicio JS Simulacro-Mariano Dario Maya-C1
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimulacroFormulario.html</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="EjercicioJSSimulacro.js"></script>
+</head>
+
+<body>
+    <br><br>
+    <form onsubmit="return validar()">
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" name="Nombre">
+        <br><br>
+        <label for="Mensaje">Mensaje</label><br>
+        <textarea id="Mensaje" name="Mensaje" cols="50" rows="5"></textarea>
+        <br><br>
+        <label for="Mail">Mail</label>
+        <input type="text" id="Mail" name="mail">
+        <br>
+        <br>
+     <!--   <input type="submit" value="Enviar1">-->
+        <button type="button" onclick="validar()">Enviar2</button>
+        <br>
+        <br>
+        <button type="button" onclick="limpiar_errores()">Limpiar Errores</button>
+        </ul>
+        <ul id="lta_errores">
+        </ul>
+
+        <!--  <div class="errores">-->
+        <p>Mensajes:</p>
+        <ul id="lista_mensajes">
+        </ul>
+
+    </form>
+
+</body>
+
+</html>
