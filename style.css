@@ -165,19 +165,6 @@ h5 {
     color: blue;
 }
 
-/*#tercera{
-    float: right;
-    margin-top: 100px;
-    border-width: 10px;
-    border-style:solid;
-    border-color:red;
-}
-#cuarta{
-    margin-left: 400px;
-    border-width: 10px;
-    border-style:dashed;
-    border-color:brown;
-}*/
 .latina1 {
     color: blue;
 }
@@ -236,20 +223,27 @@ h5 {
 #clas {
     border-color: brown;
     border-style: solid;
+    margin-right: 10px;
 }
 
 #elec {
     border-color: black;
     border-style: solid;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #acus {
+    margin-left:50px;
+    margin-right: 50px;
     border-style: solid;
-    border-color: blue
+    border-color: blue   
 }
 
-.espacio {
-    padding: 2%;
+#lta_errores{
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 15px;
+    color:red;
 }
 
 .for {
@@ -260,31 +254,48 @@ h5 {
     margin-left: 150px;
 }
 
-#tipo {
-    margin-left: 150px;
-    color: darkmagenta;
-    margin-bottom: 10px;
-}
-
 .mail {
     display:flex;
-    flex-direction:column;
+    flex-direction:column  ;
     border:3px solid darkred;
-    margin-left: 150px;
-    margin-right: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: darkmagenta;
+    background-color:turquoise;
 }
 
-.marca {
-    margin-left: 10%;
-    font-family: 'Times New Roman', Times, serif;
-    color: darkmagenta;
+#com{
+    margin-top: 20px;
 }
 
-.envio {
-    margin-left: 10%;
+#guita{
+    display:flex;
+    font-size: 15px;
+    color:red;
+    margin: 20px;
+}
+#f_tipo{
+    font-size: 17px;
+}
+
+#tipo {
+    margin-left: 50px;
+}
+
+#Mensaje{
+    border-radius: 0px 20px 20px 20px;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-bottom: 20px;
+}
+
+#enviar {
+    font-size: 20px;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 20px;
 }
 
 .comunica {
@@ -293,8 +304,12 @@ h5 {
     color: forestgreen;
 }
 
-#enlace {
-    margin-left: 47%;
+table,th,td{
+    border:2px solid red;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color:blue; 
+   
 }
 
 /*label, input {

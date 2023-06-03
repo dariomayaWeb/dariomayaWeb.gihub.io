@@ -1,7 +1,7 @@
 
 
 let fotos = ["Jimy Hendrix.jpeg", "ChukBerry.jpeg", "PacodeLucia.jpeg", "Lebon.jpeg", "CachoTirao.jpeg", "BrianMay.jpeg", "Clapton.jpeg", "ElNegroFerreira.jpeg", "Ceratti.jpeg", "Falu.jpeg"];
-let nombres = ["Jimy Hendrix", "Chuk Berry", "Paco de Lucia", "David Lebon", "Cacho Tirao", "Brian May", "Erik Clapton", "El Negro Ferreira", "Gustavo Ceratti", "Eduardo Falú"]
+let nombres = ["Jimy Hendrix", "Chuk Berry", "Paco de Lucia", "David Lebon", "Cacho Tirao", "Brian May", "Erik Clapton", "El Negro Ferreira", "Gustavo Ceratti", "Eduardo Falú"];
 let i = 0;
 function adelante() {
     if (i < fotos.length - 1) {
@@ -21,18 +21,20 @@ function atras() {
         nom.innerHTML = nombres[i];
     }
 }
-/*let nomb = document.forms["formu"]["Nombre"];
-nomb.requestFocus();*/
+
 function validar() {
+    limpiar_errores();
     let nomb = document.forms["formu"]["Nombre"];
     let apell = document.forms["formu"]["Apellido"];
     let mail = document.forms["formu"]["mail"];
+    let mensaje = document.forms["formu"]["Mensaje"];
     let valid = /^\w+@\w+(\.\w{2,5})+$/;
     let f_tipo = document.querySelector("#f_tipo");
     let lista_errores = document.getElementById("lta_errores");
 
     nomb.style.border = "3px solid blue";
     apell.style.border = "3px solid blue";
+    mail.style.border = "3px solid blue";
    
     if (nomb.value == "") {
         nomb.style.border = "3px solid red";   
@@ -59,13 +61,17 @@ function validar() {
         mail.focus();  
         return false;   
     }
-
+    
     let item = document.createElement("li");
-    item.innerHTML = nomb.value + " " + apell.value + " hizo una comunicación tipo " + f_tipo.value;
+    item.innerHTML = nomb.value + " " + apell.value + " hizo una comunicación de  tipo " + f_tipo.value + " : " + mensaje.value;
     let lta = document.querySelector("#lta_comunicaciones");
     lta.appendChild(item);
-    return false;
+    
+    document.forms["formu"].reset();
+    return false;   
 }
+
+
 function limpiar_errores() {
     let lta_errores = document.getElementById("lta_errores");
     lta_errores.innerHTML = "";

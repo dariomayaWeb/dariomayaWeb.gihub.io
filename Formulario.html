@@ -18,91 +18,79 @@
             <img id="clas" src="guitarraClasica.jpeg" width="250px" heigth="100px">
             <p>Clásica</p>
         </div>
-        <div class="espacio">
-        </div>
         <div>
             <img id="elec" src="guitar2.jpeg" width="80px" heigth="150px">
             <p>Eléctrica</p>
-        </div>
-        <div class="espacio">
         </div>
         <div>
             <img src="guitCriolla.jpeg" width="140px" heigth="80px">
             <p>Criolla</p>
         </div>
-        <div class="espacio">
-        </div>
         <div>
             <img id="acus" src="guitElectroacus.jpeg" width="200px" heigth="100px">
             <p>Electroacústica</p>
-        </div>
-        <div class="espacio">
         </div>
         <div>
             <img src="guitar.jpg" width="250px" heigth="80px">
             <p>Personalizadas</p>
         </div>
     </div>
+
     <div>
-        <div id="tipo">
-            <br><br>
-            <label for="guitarras">Elija una guitarra:</label>
-            <select id="guitarras" name="guitarras">
-                <option selected value="clasica">Clásica</option>
-                <option value="electrica">Eléctrica</option>
-                <option value="criolla">Criolla</option>
-                <option value="electroacustica">Electroacústica</option>
-                <option value="personalizada">Personalizada</option>
-            </select>
-        </div>
-        <div class="marca">
-            <label for="marcas">Elija una marca:</label>
-            <select id="marca" name="marca">
-                <option selected value="Fendel">Fendel</option>
-                <option value="Gloria">Gloria</option>
-                <option value="Antigua Casa Nuñez">Antigua Casa Nuñez</option>
-                <option value="Patria">Patria</option>
-                <option value="Sevilla">Sevilla</option>
-            </select>
-        </div>
-    </div>
-    <div class="mail">
         <div class="for">
-            <p>Comuniquese con nosotros si desea adquirir un instrumento,<br> envíenos sus datos y dirección de mail
-                para su<em>pedido,sugerencia o queja</em>,<br> nos contactaremos con Ud a la brevedad.Muchas
+            <p>Comuniquese con nosotros, envíenos sus datos y dirección de mail
+                para su <em>pedido,sugerencia o queja</em>, nos contactaremos con Ud a la brevedad.Muchas
                 gracias.
             </p>
         </div>
-    
-            <form class="mail"name="formu" onsubmit="return validar()">
-                <label for="Nombre">Nombre</label>
-                <input type="text" id="Nombre" name="Nombre">
-                <label for="Apellido">Apellido</label>
-                <input type="text" id="Apellido" name="Apellido">
-                <label for="Mail">Mail</label>
-                <input type="text" id="Mail" name="mail">
-                <br><br>
-                <label for="f_tipo">Comunicación Tipo:</label><br>
-                <select id="f_tipo" name="f_tipo">
-                    <option value="Pedido">Pedido</option>
-                    <option value="Queja">Queja</option>
-                    <option value="Sugerencia">Sugerencia</option>
-                </select>
-                <br><br>
-                <input type="submit" value="Enviar1">
-                <!-- <button type="button" onclick="validar()">Enviar2</button>-->
-                <br><br>
-                <button type="button" onclick="limpiar_errores()">Limpiar Errores</button>
-            </form>
 
+        <form class="mail" name="formu" onsubmit="return validar()">
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" name="Nombre" autofocus>
+            <label for="Apellido">Apellido</label>
+            <input type="text" id="Apellido" name="Apellido">
+            <label for="Mail">Mail</label>
+            <input type="text" id="Mail" name="mail">
+
+            <ul id="lta_errores"></ul>
+
+            <label for="f_tipo" id="com">Comunicación Tipo:</label><br>
+            <select id="f_tipo" name="f_tipo">
+                <option value="Pedido">Pedido</option>
+                <option value="Sugerencia">Sugerencia</option>
+                <option value="Queja">Queja</option>
+            </select>
+            <div id="guita">
+                <div id="tipo">
+                    <label for="guitarras">Elija una guitarra:</label>
+                    <select id="guitarras">
+                        <option selected value="clasica">Clásica</option>
+                        <option value="electrica">Eléctrica</option>
+                        <option value="criolla">Criolla</option>
+                        <option value="electroacustica">Electroacústica</option>
+                        <option value="personalizada">Personalizada</option>
+                    </select>
+                </div>
+                <div id="marca">
+                    <label for="marcas">Elija una marca:</label>
+                    <select id="marcas">
+                        <option selected value="Fendel">Fendel</option>
+                        <option value="Gloria">Gloria</option>
+                        <option value="Antigua Casa Nuñez">Antigua Casa Nuñez</option>
+                        <option value="Patria">Patria</option>
+                        <option value="Sevilla">Sevilla</option>
+                    </select>
+                </div>
+            </div>
+            <label for="Mensaje">Escriba su Mensaje</label><br>
+            <textarea id="Mensaje" name="Mensaje" cols="50" rows="5"></textarea>
+            <input id="enviar" type="submit" value="Enviar">
+        </form>
         <br>
     </div>
     <div class="comunica">
         <p>Últimas comunicaciones:</p>
-        <ul id="lta_comunicaciones">
-        </ul>
-        <ul id="lta_errores">
-        </ul>
+        <ul id="lta_comunicaciones"></ul>
     </div>
     <div class="inter2">
         <p>///////////</p>
