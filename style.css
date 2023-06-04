@@ -8,7 +8,11 @@ body {
     padding-left: 350px;
 }
 
-.guitarras {
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
     background-color: yellow;
     border: 3px solid brown;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,6 +23,8 @@ body {
 }
 
 #primera {
+    margin-right: 20px;
+    margin-left: 20px;
     display: block
 }
 
@@ -234,20 +240,20 @@ h5 {
 }
 
 #acus {
-    margin-left:50px;
+    margin-left: 50px;
     margin-right: 50px;
     border-style: solid;
-    border-color: blue   
+    border-color: blue
 }
 
-#lta_errores{
-    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+#lta_errores {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
     font-size: 15px;
-    color:red;
+    color: red;
 }
 
 .for {
-    
+
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     color: darkmagenta;
@@ -255,29 +261,30 @@ h5 {
 }
 
 .mail {
-    display:flex;
-    flex-direction:column  ;
-    border:3px solid darkred;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid darkred;
     margin-left: 400px;
     margin-right: 400px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: darkmagenta;
-    background-color:turquoise;
+    background-color: turquoise;
 }
 
-#com{
+#com {
     margin-top: 20px;
 }
 
-#guita{
-    display:flex;
+#guita {
+    display: flex;
     font-size: 15px;
-    color:red;
+    color: red;
     margin: 20px;
 }
-#f_tipo{
+
+#f_tipo {
     font-size: 17px;
 }
 
@@ -285,10 +292,10 @@ h5 {
     margin-left: 50px;
 }
 
-#Mensaje{
+#Mensaje {
     border-radius: 0px 20px 20px 20px;
     margin-left: 10px;
-    margin-right:10px;
+    margin-right: 10px;
     margin-bottom: 20px;
 }
 
@@ -304,12 +311,14 @@ h5 {
     color: forestgreen;
 }
 
-table,th,td{
-    border:2px solid red;
+table,
+th,
+td {
+    border: 2px solid red;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   color:blue; 
-   
+    color: blue;
+
 }
 
 /*label, input {
